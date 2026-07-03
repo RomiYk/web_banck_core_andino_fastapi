@@ -1,0 +1,1 @@
+export const API_URL = "[https://web-banck-core-andino-fastapi-71fr.onrender.com](https://web-banck-core-andino-fastapi-71fr.onrender.com)";

@@ -1,0 +1,89 @@
+:root {
+  /* Paleta de colores Banco Los Andes */
+  --c-primary: #00AEEF; /* Azul corporativo */
+  --c-primary-dark: #008ebf;
+  --c-amarillo: #FFD500; /* Amarillo corporativo */
+  --c-bg: #f9fafb;
+  --c-surface: #ffffff;
+  --c-border: #e5e7eb;
+  --c-text: #111827;
+  --c-text-soft: #6b7280;
+
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-size: 14px;
+}
+
+/* Layout Principal */
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.app-body { display: flex; flex: 1; }
+.app-content { flex: 1; padding: 24px; overflow-x: auto; }
+
+/* Franja superior */
+.franja-top { height: 8px; background: var(--c-primary); }
+
+/* Navbar */
+.navbar {
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--c-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+/* Sidebar */
+.sidebar { width: 220px; background: var(--c-surface); border-right: 1px solid var(--c-border); padding: 16px; }
+
+/* Cards y contenido */
+.card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+/* Formularios */
+.field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.field input {
+  padding: 10px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+}
+
+.btn {
+  background: var(--c-primary);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover { background: var(--c-primary-dark); }
+
+/* Tabla estilo profesional */
+table.tbl { width: 100%; border-collapse: collapse; }
+table.tbl th { background: #f3f4f6; padding: 12px; text-align: left; font-size: 12px; text-transform: uppercase; }
+table.tbl td { padding: 12px; border-bottom: 1px solid var(--c-border); }
+
+/* Banner Amarillo (Comunicados) */
+.banner-yellow {
+  background: var(--c-amarillo);
+  padding: 24px;
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+  color: #000;
+}
